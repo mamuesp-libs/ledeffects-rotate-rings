@@ -55,7 +55,7 @@ void mgos_ledeffects_rotate_rings(void* param, mgos_rgbleds_action action)
     }
 }
 
-bool mgos_rotate_rings_init(void) {
+bool mgos_ledeffects_rotate_rings_init(void) {
   LOG(LL_INFO, ("mgos_rotate_rings_init ..."));
   ledmaster_add_effect("ANIM_ROTATE_RINGS", mgos_ledeffects_rotate_rings);
   return true;
